@@ -8,6 +8,12 @@ function saludar(estudiante) {
 //     saludar(estudiantes[i]);
 // }
 
-for (var estudiante of estudiantes) {
-    saludar(estudiante);
+// for (var estudiante of estudiantes) {
+//     saludar(estudiante);
+// }
+
+while (estudiantes.length > 0) {
+    console.log(estudiantes);
+    var estudiante = estudiantes.shift();
+    saludar(estudiante)
 }
